@@ -4,5 +4,11 @@
     "email": "hello@world.com",
     "password": "41acac40b08ff3e8f46f55a52083786ff23227fe20c652942c54ff174c2946a58e7f5dcb8e862cee23ab76c86226ea6b7162f1dac03ebe21543456334f5cfcb3.bd9c604b6ac0c478",
     "id": "0a1ec33e"
+  },
+  {
+    "name": "Lucas",
+    "email": "nice@email.com",
+    "password": "584f784f2161ebdcfae20f352fd9ed163bd8c9bfacf7dd602ba23aa6f5d9b3f1ca17ec3f464c96758c84c6f59fb2792796a4a4ec283525bac06a180c68d42168.ed67b1a3d0eb6910",
+    "id": "41f2217f"
   }
 ]
