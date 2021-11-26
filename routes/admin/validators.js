@@ -2,7 +2,10 @@ const { check } = require("express-validator");
 const usersRepo = require("../../repositories/users");
 
 module.exports = {
-  requireName: check("name").trim().isAlpha("pt-BR"),
+  requireName: check("name")
+    .trim()
+    .isAlpha("pt-BR")
+    .withMessage("Invalid name, must contain only letters from a to z"),
   requireEmail: check("email")
     .trim()
     .normalizeEmail()
