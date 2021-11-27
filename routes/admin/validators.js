@@ -24,8 +24,10 @@ module.exports = {
   requirePasswordConfirmation: check("passwordConfirmation").custom(
     (passwordConfirmation, { req }) => {
       if (passwordConfirmation !== req.body.password) {
-        throw new Error("Passwords must match");
+        throw new Error(`Passwords must match`);
       }
+
+      return true;
     }
   ),
   requireEmailExists: check("email")
