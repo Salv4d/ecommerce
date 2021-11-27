@@ -2,6 +2,17 @@ const { check } = require("express-validator");
 const usersRepo = require("../../repositories/users");
 
 module.exports = {
+  requireTitle: check("title")
+    .trim()
+    .isLength({ min: 3, max: 35 })
+    .withMessage("The title must have between 3 and 35 characters")
+    .isAlphanumeric()
+    .withMessage("The product name only accepts alphanumeric characters "),
+  requirePrice: check("price")
+    .trim()
+    .toFloat()
+    .isFloat({ min: 1 })
+    .withMessage("Price must be a valid number"),
   requireName: check("name")
     .trim()
     .isAlpha("pt-BR")
