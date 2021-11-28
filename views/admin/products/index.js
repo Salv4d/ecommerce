@@ -6,7 +6,7 @@ module.exports = ({ products }) => {
       return `
       <tr>
         <td>${product.title}</td>
-        <td>${product.price}</td>
+        <td>$ ${product.price.toFixed(2)}</td>
         <td>
           <a href="">
             <button class="button is-link">
