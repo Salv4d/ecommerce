@@ -5,9 +5,7 @@ module.exports = {
   requireTitle: check("title")
     .trim()
     .isLength({ min: 3, max: 35 })
-    .withMessage("The title must have between 3 and 35 characters")
-    .isAlphanumeric()
-    .withMessage("The product name only accepts alphanumeric characters "),
+    .withMessage("The title must have between 3 and 35 characters"),
   requirePrice: check("price")
     .trim()
     .toFloat()
