@@ -1,10 +1,13 @@
 const express = require("express");
-const { route } = require("./admin/products");
+const productsRepo = require("../repositories/products");
+const productsIndexTemplate = require("../views/products/index");
 
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-  res.send("products");
+  const products = await productsRepo.getAll();
+
+  res.send(productsIndexTemplate({ products }));
 });
 
 module.exports = router;
