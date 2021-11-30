@@ -144,3 +144,13 @@ body {
   display: flex;
   align-items: center;
 }
+
+.icon-credits {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 25px 0;
+}
+
+.icon-credits a {
+  margin: 0 5px 0 5px;
+}
