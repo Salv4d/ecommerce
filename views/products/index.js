@@ -11,7 +11,7 @@ module.exports = ({ products }) => {
             </figure>
             <div class="card-content">
               <h3 class="subtitle">${product.title}</h3>
-              <h5>$${product.price}</h5>
+              <h5>$${product.price.toFixed(2)}</h5>
             </div>
             <footer class="card-footer">
               <form action="/cart/products" method="POST">
